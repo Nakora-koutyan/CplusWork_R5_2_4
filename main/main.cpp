@@ -5,19 +5,20 @@ int main(void)
 {
 	//クラスPOSのオブジェクトを作成(変数pos)
 	POS pos;
-	//クラスPOSのオブジェクトを作成(変数pos2)
+	//クラスPOSのオブジェクト
+	//複数オブジェクトを作っても作られるメモリが違うため、別のデータを持てる
 	POS pos2;
 
 	//posのメンバ変数に値を代入
 	pos.x = 100.0;
 	pos.y = 200.0;
 
-	pos.print();	//値を画面に表示
+	pos.print();	//posのメンバ関数を呼び出す
 
 	pos2.x = 300.0;
 	pos2.y = 256.0;
 
-	pos2.print();	//値を画面に表示
+	pos2.print();	//pos2のメンバ関数を呼び出す
 
 	return 0;
 }
