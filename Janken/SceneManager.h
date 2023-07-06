@@ -12,7 +12,8 @@ public:
 	SceneManager(AbstractScene* scene):mScene(scene){}
 
 	//デストラクタ
-	~SceneManager() {
+	~SceneManager()
+	{
 		delete mScene;
 	}
 

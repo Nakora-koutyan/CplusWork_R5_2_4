@@ -1,18 +1,18 @@
 #pragma once
+#include<stdio.h>
+#include"DxLib.h"
 #include"AbstractScene.h"
 #include"EnemyTurn.h"
 
-class Result :public AbstractScene {
+class GameMain :public AbstractScene {
 private:
-	int Player_hand;
-	int Enemy_hand;
-
+	int a = -1;
+	int key = 1;
+	
 public:
-	//引数つきコンストラクタ
-	Result(int a,int b);
 
 	//デストラクタ
-	virtual ~Result() {};
+	virtual ~GameMain() {};
 
 	//描画以外の更新を実装する
 	virtual AbstractScene* Update()override;

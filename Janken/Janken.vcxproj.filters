@@ -10,18 +10,42 @@
     <ClCompile Include="SceneManager.cpp">
       <Filter>main</Filter>
     </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTurn.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTurn.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="main">
       <UniqueIdentifier>{f95bb934-e947-4d00-b01f-db4207c8d0bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{94877450-3fcf-4e22-9cb6-a35fc0fdcd40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractScene.h">
-      <Filter>main</Filter>
-    </ClInclude>
     <ClInclude Include="SceneManager.h">
-      <Filter>main</Filter>
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractScene.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTurn.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTurn.h">
+      <Filter>ヘッダーファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
