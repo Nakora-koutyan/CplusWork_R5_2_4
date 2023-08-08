@@ -19,6 +19,8 @@ AbstractScene*GameMainScene :: Update()
 	MouseControll::Update();
 	player_bar.Update();
 	ball.Update();
+	collision.Update();
+	stageblock.Update();
 
 	if (CheckHitKey(KEY_INPUT_ESCAPE))
 	{
@@ -29,10 +31,10 @@ AbstractScene*GameMainScene :: Update()
 }
 void GameMainScene::Draw () const
 {
-	DrawString(150, 250, "ここはゲームメインシーンです。",Cr);
 	DrawFormatString(250, 400, Cr,"%d", MouseControll::Mouse.x);
 	DrawFormatString(350, 400, Cr, "%d", MouseControll::OnPressKey(KEY_INPUT_Z));
 	DrawFormatString(380, 400, Cr, "%d", MouseControll::Old_Key[6]);
 	player_bar.Draw();
 	ball.Draw();
+	stageblock.Draw();
 }

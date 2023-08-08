@@ -2,6 +2,8 @@
 #include "AbstractScene.h"
 #include "PlayerBar.h"
 #include "Ball.h"
+#include "HitCollision.h"
+#include "StageBlock.h"
 
 class GameMainScene :public AbstractScene
 {
@@ -9,6 +11,8 @@ private:
 	unsigned int Cr;		//メンバ変数
 	PlayerBar player_bar;	//クラスのオブジェクト化
 	Ball ball;				//クラスのオブジェクト化
+	StageBlock stageblock;	//クラスのオブジェクト化
+	Collision collision;	//クラスのオブジェクト化
 
 public:
 	//コンストラクタ
