@@ -145,23 +145,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameClear.cpp" />
     <ClCompile Include="GameMain.cpp" />
-    <ClCompile Include="Location.cpp" />
+    <ClCompile Include="HitCollision.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MouseControll.cpp" />
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="PlayerBar.cpp" />
     <ClCompile Include="SceeneManager.cpp" />
+    <ClCompile Include="StageBlock.cpp" />
     <ClCompile Include="Title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="GameClear.h" />
     <ClInclude Include="GameMain.h" />
-    <ClInclude Include="Location.h" />
+    <ClInclude Include="HitCollision.h" />
     <ClInclude Include="MouseControll.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="PlayerBar.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="StageBlock.h" />
     <ClInclude Include="Title.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
