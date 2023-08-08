@@ -4,7 +4,9 @@
 class TitleScene :public AbstractScene
 {
 private:
-	unsigned int Cr;
+	int g_TitleImage;
+	int g_MenuY;
+	int g_MenuNumber;
 
 public:
 	//コンストラクタ
@@ -18,4 +20,8 @@ public:
 
 	//描画に関することを実装する
 	virtual void Draw() const override;
+
+	//メニュー選択
+	void SelectMenu();
+
 };

@@ -8,9 +8,10 @@ public:
 	static int bar_y;
 
 public:
-	PlayerBar();		//コンストラクタ
-	~PlayerBar();		//デストラクタ
-	void Update();		//描画以外に関することを実装する
-	void Draw()const;	//描画に関することを実装する
+	PlayerBar();			//コンストラクタ
+	~PlayerBar();			//デストラクタ
+	void Update();			//描画以外に関することを実装する
+	void Draw()const;		//描画に関することを実装する
+	void ReflectionBar();	//バーの反射
 };
 

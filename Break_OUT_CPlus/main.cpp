@@ -3,6 +3,7 @@
 #include"AbstractScene.h"
 #include"Title.h"
 #include"MouseControll.h"
+#include"common.h"
 
 
 int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In_ int ii)
@@ -10,10 +11,13 @@ int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In
 	//ウィンドウモードで起動
 	ChangeWindowMode(TRUE);		//フルスクリーンモードで起動
 
+	SetGraphMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32);	//ウィンドウサイズを設定
+
 	if (DxLib_Init() == -1)
 	{
 		return -1;				//DXライブラリの初期化処理
 	}
+
 	//裏画面に描画する
 	SetDrawScreen(DX_SCREEN_BACK);
 
